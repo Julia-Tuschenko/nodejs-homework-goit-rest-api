@@ -23,7 +23,12 @@ const contactSchema = Schema({
         type: String,
         enum:["new", "update"],
         default: "new",
-    }
+    },
+    owner: {
+        type: Schema.Types.ObjectId,
+        ref: 'user',
+        required: true,
+      }
 }, {versionKey: false, timestamps: true});
 
 const Contact = model("contact", contactSchema);
