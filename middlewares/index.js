@@ -4,6 +4,7 @@ const ctrlWrapper = require("./ctrlWrapper");
 const validationStatus = require("./validationStatus");
 const validationUser = require("./validationUser");
 const auth = require("./authorization");
+const upload = require("./upload");
 
 module.exports = {
     validationAddContact,
@@ -11,5 +12,6 @@ module.exports = {
     ctrlWrapper,
     validationStatus,
     validationUser,
-    auth
+    auth,
+    upload,
 }

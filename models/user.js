@@ -26,7 +26,10 @@ favorite:{
     type: Boolean,
     default: false,
  },
-
+avatarURL:{
+    type:String,
+    required: true,
+}
 
 }, {versionKey: false, timestamps: true});
 
